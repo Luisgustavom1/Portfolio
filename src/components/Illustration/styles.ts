@@ -2,25 +2,32 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
   width: 100%;
+  height: calc(100vh - 10rem);
+  margin-top: 5rem;
   
-  margin-top: 14rem;
+  display: grid;
+  place-items: center;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  
-  span {
+  div {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-  }
+    justify-content: space-between;
+    align-items: center;
+    span {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
 
-  aside {
-    user-select: none;
+    img {
+      user-select: none;
+    }
   }
 
   i {
-    opacity: 0;
+    font-size: 3.8rem;
+    color: ${({ theme }) => theme.green};
+    animation: 1s linear infinite alternate pulse;   
   }
 
   @keyframes pulse {
@@ -29,18 +36,14 @@ export const Container = styled.section`
   }
 
   @media(max-width: 590px) {
+   div {
     flex-direction: column;
 
     gap: 7rem;
-
-    margin-top: 12rem;
-
-    i {
-      font-size: 3.8rem;
-      opacity: 1;
-      color: ${({ theme }) => theme.green};
-      animation: 1s linear infinite alternate pulse;    
-    }
+   }
+   i {
+     margin-top: -8rem;
+   }
   }
 `;
 
