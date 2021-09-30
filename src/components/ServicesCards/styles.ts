@@ -8,10 +8,11 @@ export const Container = styled.div`
     background-color: ${theme.gray50};
 
     border: 1px solid ${theme.gray100};
-    border-bottom: 5px solid ${theme.green};
 
     margin: 0 auto;
-    div {
+
+    position: relative;
+    .content {
       padding: 3rem;
     }
 
@@ -22,6 +23,18 @@ export const Container = styled.div`
       color: ${theme.gray300};
 
       margin-top: 4rem;
+    }
+
+    .faixa {
+      display: block;
+      
+      width: 100%;
+      height: 5px;
+
+      background-color: ${theme.green};
+
+      position: absolute;
+      bottom: 0;
     }
   `}
 `;

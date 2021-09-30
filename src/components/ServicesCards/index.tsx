@@ -8,7 +8,7 @@ interface ServicesCardsProps {
 const ServicesCards = ({ img, title }: ServicesCardsProps) => {
   return(
     <Container>
-      <div>
+      <div className='content'>
         <img 
           src={img}
           alt={`Svg da ${title}`}
@@ -17,6 +17,7 @@ const ServicesCards = ({ img, title }: ServicesCardsProps) => {
           {title}
         </h3>
       </div>
+      <span className='faixa'></span>
     </Container>
   );
 }

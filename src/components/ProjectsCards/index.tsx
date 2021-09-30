@@ -7,7 +7,7 @@ import { Container } from './styles';
 const ProjectsCards: React.FC = () => {
   return(
     <Container>
-      <div>
+      <div className='content'>
         <img
           src={imagem}
           alt={`Imagem do `}
