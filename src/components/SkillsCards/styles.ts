@@ -1,10 +1,21 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
-  background-color: ${({ theme }) => theme.gray50};
+  ${({ theme }) => css`
+    background-color: ${theme.gray50};
 
-  &:first-child {
-    font-size: 8rem;
-    color: ${({ theme }) => theme.green};
-  }
+    border: 1px solid ${theme.gray100};
+  
+    width: 15rem;
+    height: 15rem;
+    
+    display: grid;
+    place-items: center;
+
+    margin: 0 auto;
+    .icon {
+      font-size: 8rem;
+      color: ${theme.green};
+    }
+  `}
 `;

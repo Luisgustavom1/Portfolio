@@ -2,14 +2,14 @@ import React, { ReactNode } from 'react';
 
 import { Container } from './styles';
 
-interface SkillsCards {
+interface SkillsCardsProps {
   icon: ReactNode | string
 }
 
-const SkillsCards = ({ icon }: SkillsCards) => {
+const SkillsCards = ({ icon }: SkillsCardsProps) => {
   return(
     <Container>
-      {icon}
+      <div className="icon">{icon}</div>
     </Container>
   );
 }
