@@ -43,19 +43,19 @@ export const Subtitle = styled.p`
 export const ButtonCV = styled.button`
     background-color: ${({ theme }) => theme.green};
 
-    width: 14.3rem;
+    width: 143px;
     height: 42px;
 
     border-radius: 2px;
 
     cursor: pointer;
     &:hover {
-        filter: brightness(.9);
+      filter: brightness(.9);
     }
 `;
 
 export const ButtonTransparent = styled.button`
-    width: 15rem;
+    width: 143px;
     height: 42px;
 
     background-color: transparent;
@@ -67,6 +67,6 @@ export const ButtonTransparent = styled.button`
 
     cursor: pointer;
     &:hover {
-        border: 1px solid ${({ theme }) => theme.gray300};
+      border: 1px solid ${({ theme }) => theme.gray300};
     }
 `;

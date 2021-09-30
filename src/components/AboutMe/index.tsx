@@ -1,11 +1,12 @@
 import React from 'react';
+import { HeadingCategories } from '../../styles/commomStyles';
 
 import { Container } from './styles';
 
 const AboutMe: React.FC = () => {
   return(
       <Container>
-          <h1>About Me</h1>
+          <HeadingCategories>About Me</HeadingCategories>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, asperiores laboriosam consectetur nisi, atque esse explicabo, odit molestiae alias ex eligendi vitae dolores rerum ratione ab voluptatum similique blanditiis animi!</p>
       </Container>
   );
