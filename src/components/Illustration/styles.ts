@@ -1,14 +1,23 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-    width: 100vw;
+    width: 100%;
     
-    padding: 0 15rem;
     margin-top: 14rem;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    span {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    aside {
+      user-select: none;
+    }
 `;
 
 export const Heading = styled.h1`
@@ -35,12 +44,11 @@ export const ButtonCV = styled.button`
     background-color: ${({ theme }) => theme.green};
 
     width: 14.3rem;
-    height: 4.2rem;
+    height: 42px;
 
     border-radius: 2px;
 
-    margin-right: 1.5rem;
-
+    cursor: pointer;
     &:hover {
         filter: brightness(.9);
     }
@@ -48,7 +56,7 @@ export const ButtonCV = styled.button`
 
 export const ButtonTransparent = styled.button`
     width: 15rem;
-    height: 4rem;
+    height: 42px;
 
     background-color: transparent;
     color: ${({ theme }) => theme.colors.primary};
@@ -57,6 +65,7 @@ export const ButtonTransparent = styled.button`
 
     border-radius: 2px;
 
+    cursor: pointer;
     &:hover {
         border: 1px solid ${({ theme }) => theme.gray300};
     }

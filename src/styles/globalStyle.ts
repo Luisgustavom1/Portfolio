@@ -25,6 +25,16 @@ export const GlobalStyle = createGlobalStyle`
         border: 0;
     }
 
+    .mainContainer {
+      padding: 0 15rem;
+    }
+
+    @media(max-width: 805px) {
+      .mainContainer {
+        padding: 0 5rem;
+      }
+    }
+
     @media (max-width: 1015px) {
       html {
         font-size: 55%;
