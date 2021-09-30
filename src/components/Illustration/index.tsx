@@ -25,6 +25,7 @@ const Illustration: React.FC = () => {
                 alt='Illustration svg'
               />
           </aside>
+          <i className="fas fa-chevron-down"></i>
       </Container>
   );
 }
