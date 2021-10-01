@@ -7,19 +7,17 @@ import ContactsCircle from '../ContactsCircle';
 import { Container } from './styles';
 
 const Contacts: React.FC = () => {
-  const contacts = document.querySelectorAll('.contact');
-
   const config = {
-    distance: '0px',
-    opacity: 1,
-    delay: 50,
+    origin: 'top',
+    distance: '1px',
+    delay: 150,
     duration: 1500,
     easing: 'ease-in',
     reset: true,
-  }
+  };
   useEffect(() => {    
-    sr.reveal(contacts, config)
-  }, [contacts])
+    sr.reveal('.contact', config)
+  }, []);
 
   return(
     <Container>

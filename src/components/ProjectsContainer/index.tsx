@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { HeadingCategories } from '../../styles/commomStyles';
 import ProjectsCards from '../ProjectsCards';
 
@@ -7,19 +7,28 @@ import sr from '../../Services/scrollReveral';
 import { Container, ProjectsCardsContainer } from './styles';
 
 const Projects: React.FC = () => {
-  const allCards = document.querySelectorAll('.card') as NodeListOf<HTMLElement>;
-
-  useEffect(() => {    
-    const config = {
-      origin: 'left',
-      distance: '1px',
-      delay: 50,
-      duration: 1500,
-      easing: 'ease-in-out',
-      reset: true,
+  const config = {
+    origin: 'right',
+    distance: '300px',
+    delay: 50,
+    duration: 1500,
+    easing: 'ease-in-out',
+    reset: true,
+  }
+  useEffect(() => {
+    function animation() {
+      const cards = document.querySelectorAll('.card') as NodeListOf<HTMLElement>;
+            
+      cards.forEach((card, index) => {
+        index % 2 === 0 
+          ? sr.reveal(card, config)
+          : sr.reveal(card, {...config, delay: 150})
+      })      
     }
-    sr.reveal('.card', config);
-  }, [])
+
+    animation();
+  }, []);
+
   return(
     <Container>
       <HeadingCategories>Projects</HeadingCategories>
