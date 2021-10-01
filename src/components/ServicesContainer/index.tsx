@@ -36,15 +36,19 @@ const Services: React.FC = () => {
       <ServicesContainer>
         <ServicesCards 
           img={code}
-          title='Criação de apps e sites'
+          title='
+          Creating apps and websites'
         />
         <ServicesCards 
           img={figma}
-          title='Ui Designer'
+          title='Front end Developer'
         />
         <ServicesCards 
           img={mobile}
-          title='Criação de apps e sites'
+          title='
+          Professional problem solver
+          
+          '
         />
       </ServicesContainer>
     </Container>

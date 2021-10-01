@@ -12,6 +12,7 @@ const Illustration: React.FC = () => {
       
       element.innerHTML = '';
 
+      // eslint-disable-next-line array-callback-return
       arrayText?.map(( letter, i ) => {
         setTimeout(() => {
           element.innerHTML += letter;
@@ -28,8 +29,8 @@ const Illustration: React.FC = () => {
     <Container>
       <div>
         <article>
-          <Heading id='title'>Olá, eu sou o Luis Gustavo :)</Heading>
-          <Subtitle id='subtitle'>Desevnvolvedor Front-end / ReactJs - React Native - NextJs - NodeJs</Subtitle>
+          <Heading id='title'>Hello, I'm Luis Gustavo :)</Heading>
+          <Subtitle id='subtitle'>Front-end Developer/ ReactJs - NextJs - NodeJs</Subtitle>
           <ButtonContainer>
             <ButtonCV 
               href={`${process.env.PUBLIC_URL}/pdf/curriculo.pdf`}
