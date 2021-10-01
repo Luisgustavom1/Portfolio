@@ -12,20 +12,21 @@ import { HeadingCategories } from '../../styles/commomStyles';
 
 const Services: React.FC = () => {
 
-  const services = document.querySelectorAll('.service');
-
   const config = {
     origin: 'top',
-    distance: '200px',
-    opacity: 1,
-    delay: 50,
+    distance: '50px',
     duration: 1500,
     easing: 'ease-in',
     reset: true,
   }
   useEffect(() => {    
-    sr.reveal(services, config)
-  }, [services])
+    const animation = () => {
+      const services = document.querySelectorAll('.service') as NodeListOf<HTMLElement>;
+      
+      services.forEach((service, index) => sr.reveal(service, {...config, delay: (50 * (index * 10))}));
+    };
+    animation();
+  }, []);
 
   return(
     <Container>

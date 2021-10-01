@@ -4,12 +4,11 @@ import { Container } from './styles';
 
 interface SkillsCardsProps {
   icon: ReactNode | string;
-  className: string
 }
 
-const SkillsCards = ({ icon, className }: SkillsCardsProps) => {
+const SkillsCards = ({ icon }: SkillsCardsProps) => {
   return(
-    <Container className={className}>
+    <Container className='skill'>
       <div className="icon">{icon}</div>
     </Container>
   );

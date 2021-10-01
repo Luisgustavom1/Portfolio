@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { HeadingCategories } from '../../styles/commomStyles';
 import SkillsCards from '../SkillsCards';
 
@@ -17,13 +17,18 @@ const Skills: React.FC = () => {
   }
   
   useEffect(() => {            
-    sr.reveal('.skill1', config)
-    sr.reveal('.skill2', {...config, delay: 250})
-    sr.reveal('.skill3', {...config, delay: 450})
-    sr.reveal('.skill4', {...config, origin: 'right'})
-    sr.reveal('.skill5', {...config, delay: 250, origin: 'right'})
-    sr.reveal('.skill6', {...config, delay: 449, origin: 'right'})
-  }, [])
+    const animation = () => {
+      const skills = document.querySelectorAll('.skill') as NodeListOf<HTMLElement>;
+      sr.reveal(skills[0], config)
+      sr.reveal(skills[1], {...config, delay: 250})
+      sr.reveal(skills[2], {...config, delay: 450})
+      sr.reveal(skills[3], {...config, origin: 'right'})
+      sr.reveal(skills[4], {...config, delay: 250, origin: 'right'})
+      sr.reveal(skills[5], {...config, delay: 450, origin: 'right'})
+    };
+    animation();
+  }, []);
+  
   return(
     <Container>
       <HeadingCategories>
@@ -32,19 +37,15 @@ const Skills: React.FC = () => {
       <SkillContainer>
         <SkillsCards 
           icon={<i className="fab fa-html5"></i>}
-          className='skill1'
         />
         <SkillsCards 
           icon={<i className="fab fa-css3-alt"></i>}
-          className='skill2'
         />
         <SkillsCards 
           icon={<i className="fab fa-js-square"></i>}
-          className='skill3'
         />
         <SkillsCards 
           icon={<i className="fab fa-react"></i>}
-          className='skill4'
         />
         <SkillsCards 
           icon={<svg width="80" height="80" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -65,11 +66,9 @@ const Skills: React.FC = () => {
           </defs>
           </svg>
           }
-          className='skill5'
         />
         <SkillsCards 
           icon={<i className="fab fa-html5"></i>}
-          className='skill6'
         />
       </SkillContainer>
     </Container>
