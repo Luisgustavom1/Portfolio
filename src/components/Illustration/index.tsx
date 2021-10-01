@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 import illustration from '../../assets/svg/illustration.svg';
 
-import { ButtonContainer, ButtonCV, ButtonTransparent, Container, Heading, Subtitle } from './styles';
+import { ButtonContainer, ButtonCV, ButtonTransparent, Container, Heading, IllustrationAside, Subtitle } from './styles';
 
 const Illustration: React.FC = () => {
 
@@ -42,12 +42,12 @@ const Illustration: React.FC = () => {
             </ButtonTransparent>
           </ButtonContainer>
         </article>
-        <aside>
+        <IllustrationAside>
           <img
             src={illustration}
             alt='Illustration svg'
           />
-        </aside>
+        </IllustrationAside>
       </div>
       <a href='#aboutMe'>
         <i className="fas fa-chevron-down"></i>

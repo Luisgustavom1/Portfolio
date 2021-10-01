@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeadingCategories = styled.h1`
-  color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.primaryText};
   font-size: 3.2rem;
   font-weight: 700;
   text-align: center;

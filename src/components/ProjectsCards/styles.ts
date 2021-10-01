@@ -4,7 +4,7 @@ export const Container = styled.div`
   ${({ theme }) => css`
     width: 35rem;
 
-    background-color: ${theme.gray50};
+    background-color: ${theme.blue100};
 
     display: grid;
     place-items: center;
@@ -12,7 +12,7 @@ export const Container = styled.div`
     padding: 2rem 2.5rem;
 
     border-radius: 2px;
-    border: 1px solid ${theme.gray100};
+    border: 1px solid ${theme.blue50};
     
     margin: 0 auto;
     img {
@@ -20,7 +20,7 @@ export const Container = styled.div`
     }
 
     h1 {
-      color: ${theme.colors.primary};
+      color: ${theme.colors.primaryText};
 
       font-size: 1.8rem;
       font-weight: 500;
@@ -30,7 +30,7 @@ export const Container = styled.div`
 
     h4 {
       font-size: 1.4rem;
-      color: ${theme.gray300};
+      color: ${theme.colors.secondary};
     }
   `}
 `;

@@ -13,11 +13,6 @@ export const Container = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    span {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-    }
 
     img {
       user-select: none;
@@ -26,7 +21,7 @@ export const Container = styled.section`
 
   i {
     font-size: 3.8rem;
-    color: ${({ theme }) => theme.green};
+    color: ${({ theme }) => theme.blue};
     animation: 1s linear infinite alternate pulse;   
   }
 
@@ -47,11 +42,25 @@ export const Container = styled.section`
   }
 `;
 
+export const IllustrationAside = styled.aside`
+  transform: translateX(500px);
+  opacity: .25;
+
+  animation: slide 1s forwards;
+  
+  @keyframes slide {
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+`;
+
 export const Heading = styled.h1`
   font-size: 3.6rem;
   font-weight: 700;
 
-  color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.primaryText};
 
   width: 27rem;
 
@@ -78,7 +87,7 @@ export const Subtitle = styled.p`
   font-size: 1.5rem;
   font-weight: 500;
 
-  color: ${({ theme }) => theme.gray300};
+  color: ${({ theme }) => theme.colors.secondary};
 
   margin-bottom: 3.5rem;
 `;
@@ -88,6 +97,10 @@ export const ButtonContainer = styled.span`
   opacity: 0;
 
   animation: slide 1s forwards;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
   @keyframes slide {
     100% {
       opacity: 1;
@@ -123,14 +136,14 @@ export const ButtonTransparent = styled.button`
   height: 42px;
 
   background-color: transparent;
-  color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.primaryText};
 
-  border: 1px solid ${({ theme }) => theme.gray100};
+  border: 1px solid ${({ theme }) => theme.blue50};
 
   border-radius: 2px;
 
   cursor: pointer;
   &:hover {
-    border: 1px solid ${({ theme }) => theme.gray300};
+    border: 1px solid ${({ theme }) => theme.colors.secondary};
   }
 `;

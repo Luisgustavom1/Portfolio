@@ -18,8 +18,8 @@ export const Container = styled.a`
 
       font-size: 2.7rem;
 
-      color: ${theme.green};
-      background-color: ${theme.gray50};
+      color: ${theme.blue};
+      background-color: ${theme.blue100};
 
       display: grid;
       place-items: center;
@@ -29,7 +29,7 @@ export const Container = styled.a`
     }
 
     h1 {
-      color: ${theme.colors.primary};
+      color: ${theme.colors.primaryText};
 
       font-size: 1.8rem;
       font-weight: 700;
@@ -39,7 +39,7 @@ export const Container = styled.a`
 
     p {
       font-size: 1.6rem;
-      color: ${theme.gray300};
+      color: ${theme.colors.secondary};
     }
 
     &:hover {

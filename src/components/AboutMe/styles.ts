@@ -10,7 +10,7 @@ export const Container = styled.article`
     max-width: 74.5rem;
 
     font-size: 1.8rem;
-    color: ${({ theme }) => theme.gray300};
+    color: ${({ theme }) => theme.colors.secondary};
 
     margin: 0 auto;
   }

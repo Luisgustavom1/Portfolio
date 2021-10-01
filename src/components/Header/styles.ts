@@ -6,7 +6,7 @@ export const Container = styled.header`
 
     padding: 3.5rem 15rem;
 
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.primaryText};
 
     display: flex;
     align-items: center;

@@ -2,9 +2,9 @@ import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
   ${({ theme }) => css`
-    background-color: ${theme.gray50};
+    background-color: ${theme.blue100};
 
-    border: 1px solid ${theme.gray100};
+    border: 1px solid ${theme.blue50};
   
     width: 15rem;
     height: 15rem;
@@ -15,7 +15,7 @@ export const Container = styled.div`
     margin: 0 auto;
     .icon {
       font-size: 8rem;
-      color: ${theme.green};
+      color: ${theme.blue};
     }
   `}
 `;
