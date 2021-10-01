@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import { HeadingCategories } from '../../styles/commomStyles';
 
 import sr from '../../Services/scrollReveral';
@@ -6,18 +6,19 @@ import sr from '../../Services/scrollReveral';
 import { Container } from './styles';
 
 const AboutMe: React.FC = () => {  
-  const config = {
-    origin: 'top',
-    distance: '70px',
-    delay: 50,
-    duration: 1500,
-    easing: 'ease-in-out',
-    reset: true,
-  }
   useEffect(() => {    
+    const config = {
+      origin: 'top',
+      distance: '70px',
+      delay: 50,
+      duration: 1500,
+      easing: 'ease-in-out',
+      reset: true,
+    }
     sr.reveal('.textAboutMe', config)
     sr.reveal('.headingAboutMe', {...config, delay: 200})
   }, [])
+  
   return(
       <Container id='aboutMe'>
           <HeadingCategories className='headingAboutMe'>About Me</HeadingCategories>

@@ -8,7 +8,7 @@ import Services from "./components/ServicesContainer";
 import Skills from "./components/SkillsContainer";
 
 import { GlobalStyle } from "./styles/globalStyle";
-import { dark, light } from "./styles/theme";
+import { dark } from "./styles/theme";
 
 function App() {
   return (

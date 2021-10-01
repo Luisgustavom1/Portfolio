@@ -7,16 +7,17 @@ import sr from '../../Services/scrollReveral';
 import { Container, SkillContainer } from './styles';
 
 const Skills: React.FC = () => {
-  const config = {
-    origin: 'left',
-    distance: '400px',
-    delay: 50,
-    duration: 2000,
-    easing: 'ease-in-out',
-    reset: true,
-  }
   
   useEffect(() => {            
+    const config = {
+      origin: 'left',
+      distance: '400px',
+      delay: 50,
+      duration: 2000,
+      easing: 'ease-in-out',
+      reset: true,
+    };
+    
     const animation = () => {
       const skills = document.querySelectorAll('.skill') as NodeListOf<HTMLElement>;
       sr.reveal(skills[0], config)

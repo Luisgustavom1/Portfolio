@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { HeadingCategories } from '../../styles/commomStyles';
 import ProjectsCards from '../ProjectsCards';
 
@@ -7,15 +7,15 @@ import sr from '../../Services/scrollReveral';
 import { Container, ProjectsCardsContainer } from './styles';
 
 const Projects: React.FC = () => {
-  const config = {
-    origin: 'right',
-    distance: '300px',
-    delay: 50,
-    duration: 1500,
-    easing: 'ease-in-out',
-    reset: true,
-  }
   useEffect(() => {
+    const config = {
+      origin: 'right',
+      distance: '300px',
+      delay: 50,
+      duration: 1500,
+      easing: 'ease-in-out',
+      reset: true,
+    }
     function animation() {
       const cards = document.querySelectorAll('.card') as NodeListOf<HTMLElement>;
             

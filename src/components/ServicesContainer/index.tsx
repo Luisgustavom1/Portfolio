@@ -12,14 +12,14 @@ import { HeadingCategories } from '../../styles/commomStyles';
 
 const Services: React.FC = () => {
 
-  const config = {
-    origin: 'top',
-    distance: '50px',
-    duration: 1500,
-    easing: 'ease-in',
-    reset: true,
-  }
   useEffect(() => {    
+    const config = {
+      origin: 'top',
+      distance: '50px',
+      duration: 1500,
+      easing: 'ease-in',
+      reset: true,
+    }
     const animation = () => {
       const services = document.querySelectorAll('.service') as NodeListOf<HTMLElement>;
       
