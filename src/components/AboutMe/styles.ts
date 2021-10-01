@@ -6,6 +6,7 @@ export const Container = styled.article`
   height: 50vh;
 
   padding-top: 5%;
+
   p {
     max-width: 74.5rem;
 

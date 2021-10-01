@@ -5,6 +5,7 @@ export const light = {
     primaryText: '#212429',
     secondary: '#A4A4A4'
   },
+  blue300: '#02102a',
   blue100: '#212121',
   blue50: '#22355D',
   blue: '#3D5788'
@@ -17,6 +18,7 @@ export const dark = {
     primaryText: '#F9F9F9',
     secondary: '#72788B'
   },
+  blue300: '#02102a',
   blue100: '#021436',
   blue50: '#22355D',
   blue: '#8784D9',

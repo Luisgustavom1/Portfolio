@@ -17,5 +17,10 @@ export const Container = styled.div`
       font-size: 8rem;
       color: ${theme.blue};
     }
+
+    svg {
+      width: 15rem;
+      height: 15rem;
+    }
   `}
 `;

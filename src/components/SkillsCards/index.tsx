@@ -1,14 +1,15 @@
-import React, { ReactNode } from 'react';
+import { ReactNode } from 'react';
 
 import { Container } from './styles';
 
 interface SkillsCardsProps {
-  icon: ReactNode | string
+  icon: ReactNode | string;
+  className: string
 }
 
-const SkillsCards = ({ icon }: SkillsCardsProps) => {
+const SkillsCards = ({ icon, className }: SkillsCardsProps) => {
   return(
-    <Container>
+    <Container className={className}>
       <div className="icon">{icon}</div>
     </Container>
   );

@@ -11,7 +11,7 @@ interface ContactsCircleProps {
 
 const ContactsCircle = ({ icon, title, subtitle, link }: ContactsCircleProps) => {
   return(
-    <Container href={link} target='_blank'>
+    <Container href={link} target='_blank' className='contact'>
       <div>
         { icon }
       </div>

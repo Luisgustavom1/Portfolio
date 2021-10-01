@@ -7,7 +7,7 @@ interface ServicesCardsProps {
 
 const ServicesCards = ({ img, title }: ServicesCardsProps) => {
   return(
-    <Container>
+    <Container className='service'>
       <div className='content'>
         <img 
           src={img}

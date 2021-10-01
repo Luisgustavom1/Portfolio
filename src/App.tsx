@@ -1,11 +1,11 @@
 import { ThemeProvider } from "styled-components";
 import AboutMe from "./components/AboutMe";
-import Contacts from "./components/Contacts";
+import Contacts from "./components/ContactsContainer";
 import Header from "./components/Header";
 import Illustration from "./components/Illustration";
-import Projects from "./components/Projects";
-import Services from "./components/Services";
-import Skills from "./components/Skills";
+import Projects from "./components/ProjectsContainer";
+import Services from "./components/ServicesContainer";
+import Skills from "./components/SkillsContainer";
 
 import { GlobalStyle } from "./styles/globalStyle";
 import { dark, light } from "./styles/theme";

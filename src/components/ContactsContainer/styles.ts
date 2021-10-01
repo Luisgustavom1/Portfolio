@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-  width: 90%;
+  width: 100%;
+  height: 50vh;
+
+  padding: 0 5%;
   
   margin: 0 auto;
 
