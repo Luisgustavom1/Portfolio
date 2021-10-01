@@ -39,7 +39,7 @@ const Illustration: React.FC = () => {
               Download CV
             </ButtonCV>
             <ButtonTransparent>
-              Entrar em contato
+              Get in Touch
             </ButtonTransparent>
           </ButtonContainer>
         </article>
