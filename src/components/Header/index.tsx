@@ -10,10 +10,10 @@ const Header: React.FC = () => {
         </div>
         <Nav>
             <ul>
-                <li>Sobre mim</li>
-                <li>Projetos</li>
-                <li>Serviços</li>
-                <li>Minhas skills</li>
+                <li>About Me</li>
+                <li>Projects</li>
+                <li>Services</li>
+                <li>My Skills</li>
             </ul>
         </Nav>
     </Container>

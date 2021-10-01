@@ -16,7 +16,7 @@ const Contacts: React.FC = () => {
       easing: 'ease-in',
       reset: true,
     };
-    
+
     sr.reveal('.contact', config)
   }, []);
 
@@ -24,7 +24,7 @@ const Contacts: React.FC = () => {
     <Container>
       <ContactsCircle 
         icon={<i className="far fa-smile"></i>}
-        title='Meu Nome'
+        title='My Name'
         subtitle='Luis Gustavo'
         link={'/'}
       />
