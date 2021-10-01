@@ -6,7 +6,7 @@ interface ContactsCircleProps {
   icon: ReactNode;
   title: string;
   subtitle: string;
-  link: string
+  link: string;
 }
 
 const ContactsCircle = ({ icon, title, subtitle, link }: ContactsCircleProps) => {

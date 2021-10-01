@@ -1,7 +1,17 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-  margin-top: 12.7rem;
+  margin-top: 13.7rem;
+
+  transform: translateX(-1000px);
+  opacity: 0;
+  animation: slide .2s forwards ease-in;
+  @keyframes slide {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 `;
 
 export const ProjectsCardsContainer = styled.div`

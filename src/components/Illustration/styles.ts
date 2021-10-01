@@ -56,6 +56,22 @@ export const Heading = styled.h1`
   width: 27rem;
 
   margin-bottom: 1.6rem;
+
+  &:after {
+    content: '|';
+    margin-left: 3px;
+    opacity: 1;
+    animation: textSelect .7s infinite;
+  }
+
+  @keyframes textSelect {
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 `;
 
 export const Subtitle = styled.p`
@@ -67,15 +83,36 @@ export const Subtitle = styled.p`
   margin-bottom: 3.5rem;
 `;
 
-export const ButtonCV = styled.button`
-  background-color: ${({ theme }) => theme.green};
+export const ButtonContainer = styled.span`
+  transform: translateX(-500px);
+  opacity: 0;
+
+  animation: slide 1s forwards;
+  @keyframes slide {
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+`;
+
+export const ButtonCV = styled.a`
+  background-color: ${({ theme }) => theme.blue};
 
   width: 143px;
-  height: 42px;
 
   border-radius: 2px;
 
+  padding: 13px 0;
+
   cursor: pointer;
+
+  text-decoration: none;
+  text-align: center;
+
+  color: ${({ theme }) => theme.colors.background};
+  font-weight: 700;
+  font-size: 1.2rem;
   &:hover {
     filter: brightness(.9);
   }

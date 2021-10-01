@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components';
 export const Container = styled.a`
   ${({ theme }) => css`
     width: 100px;
+    height: 11.4rem;
     
     display: grid;
     place-items: center;

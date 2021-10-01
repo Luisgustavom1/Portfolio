@@ -11,6 +11,7 @@ const ProjectsCards: React.FC = () => {
         <img
           src={imagem}
           alt={`Imagem do `}
+          loading='lazy'
         />
         <h1>Titulo do projeto</h1>
         <h4>Tecnologias ReactJs, Styled-Components e NodeJs</h4>
