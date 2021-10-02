@@ -20,6 +20,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'DM Sans', sans-serif;
     background-color: ${({ theme }) => theme.colors.background};
     overflow-x: hidden;
+    width: 100vw;
   }
 
   li, ul, ol, li, a {

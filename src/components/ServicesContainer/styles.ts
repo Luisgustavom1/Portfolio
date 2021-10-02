@@ -8,6 +8,6 @@ export const Container = styled.section`
 
 export const ServicesContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   gap: 3.2rem;
 `;
