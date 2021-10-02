@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Container, Logo, Nav } from './styles';
 
 const Header: React.FC = () => {
-  const [showMenu, setShowMenu] = useState(true);
+  const [showMenu, setShowMenu] = useState(false);
 
   return(
     <Container showMenu={showMenu}>
