@@ -1,20 +1,27 @@
-import React from 'react';
-
-import imagem from '../../assets/1.png';
-
 import { Container } from './styles';
 
-const ProjectsCards: React.FC = () => {
+interface ProjectsCardsProps {
+  image?: string;
+  title?: string;
+  href?: string;
+  tecnologies?: string
+}
+
+const ProjectsCards = ({ image, title, href, tecnologies }: ProjectsCardsProps) => {
   return(
-    <Container className='card'>
+    <Container 
+      className='card'
+      href={href} 
+      target='_blank'
+    >
       <div className='content'>
         <img
-          src={imagem}
-          alt={`Imagem do `}
+          src={image}
+          alt={`Imagem do ${title}`}
           loading='lazy'
         />
-        <h1>Titulo do projeto</h1>
-        <h4>Tecnologias ReactJs, Styled-Components e NodeJs</h4>
+        <h1>{title}</h1>
+        <h4>{tecnologies}</h4>
       </div>
     </Container>
   );

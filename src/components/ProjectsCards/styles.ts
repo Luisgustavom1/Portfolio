@@ -1,8 +1,9 @@
 import styled, { css } from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.a`
   ${({ theme }) => css`
     width: 35rem;
+    height: 30.2rem;
 
     background-color: ${theme.blue100};
 
@@ -10,11 +11,13 @@ export const Container = styled.div`
     place-items: center;
 
     padding: 2rem 2.5rem;
+    margin: 0 auto;
 
     border-radius: 2px;
     border: 1px solid ${theme.blue50};
     
-    margin: 0 auto;
+    user-select: none;
+    text-decoration: none;
     img {
       width: 30rem;
     }
