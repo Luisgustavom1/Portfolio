@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Container, Logo, Nav } from './styles';
 
 const Header: React.FC = () => {
+  const [showMenu, setShowMenu] = useState(true);
+
   return(
-    <Container>
+    <Container showMenu={showMenu}>
         <div>
             <Logo>Portfolio</Logo>
         </div>
-        <Nav>
+        <Nav className='navContainer'>
             <ul>
                 <li>About Me</li>
                 <li>Projects</li>
@@ -16,6 +18,10 @@ const Header: React.FC = () => {
                 <li>My Skills</li>
             </ul>
         </Nav>
+        <p 
+          className='menuHamburguer' 
+          onClick={() => setShowMenu(!showMenu)}
+          >MENU HAMBURGUER</p>
     </Container>
   );
 }

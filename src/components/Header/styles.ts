@@ -1,43 +1,86 @@
 import styled from 'styled-components';
 
-export const Container = styled.header`
-    width: 100%;
-    padding: 0 15rem;
+interface ContainerProps {
+  showMenu: boolean
+}
 
-    padding: 3.5rem 15rem;
+export const Container = styled.header<ContainerProps>`
+  width: 100%;
+  padding: 0 15rem;
 
-    color: ${({ theme }) => theme.colors.primaryText};
+  padding: 3.5rem 15rem;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  color: ${({ theme }) => theme.colors.primaryText};
 
-    box-shadow: -1px -4px 7px 0px black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-    @media(max-width: 805px) {
-        padding: 3.5rem 5rem;
+  box-shadow: -1px -4px 7px 0px black;
+
+  .menuHamburguer {
+    display: none;
+  }
+
+  @media(max-width: 805px) {
+    padding: 3.5rem 5rem;
+  }
+
+  @media(max-width: 480px) {
+    .navContainer {
+      position: absolute;
+      z-index: 999;
+      overflow: hidden;
+
+      top: 10rem;
+      right: 0;
+
+      background-color: ${({ theme }) => theme.blue100};
+
+      width: 60vw;
+      height: ${({ showMenu }) => showMenu ? 'calc(100vh - 10rem)' : '0'};
+
+      visibility: ${({ showMenu }) => showMenu ? 'visible' : 'hidden'};
+
+      padding: 4rem 3rem;
+
+      transition: height 500ms ease-out;
+ 
+      ul {
+        flex-direction: column;
+        gap: 5rem;
+        li {
+          font-size: 2.2rem;
+        }
+      }
     }
+    .menuHamburguer {
+      display: block;
+    }
+  }
 `;
 
 export const Logo = styled.h1`
-    font-weight: 700;
-    font-size: 2.6rem;
+  font-weight: 700;
+  font-size: 2.6rem;
 
-    user-select: none;
+  user-select: none;
 `;
 
 export const Nav = styled.nav`
-    ul {
-        display: flex;
-        gap: 3.5vw;
-        
-        li {
-            font-size: 1.8rem;
-            cursor: pointer;
-            user-select: none;
-            &:hover {
-                filter: brightness(.8);
-            }
+  position: relative;
+  ul {
+    display: flex;
+    gap: 3.5vw;
+    
+    li {
+        font-size: 1.8rem;
+        cursor: pointer;
+        user-select: none;
+        &:hover {
+            filter: brightness(.8);
         }
     }
+  }
 `;
+

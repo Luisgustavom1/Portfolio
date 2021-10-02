@@ -16,7 +16,7 @@ const Services: React.FC = () => {
     const config = {
       origin: 'top',
       distance: '50px',
-      duration: 1500,
+      duration: 1000,
       easing: 'ease-in',
       reset: true,
     }
