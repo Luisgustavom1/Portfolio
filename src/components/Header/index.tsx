@@ -18,10 +18,10 @@ const Header: React.FC = () => {
                 <li>My Skills</li>
             </ul>
         </Nav>
-        <p 
-          className='menuHamburguer' 
+        <i 
+          className="fas fa-bars menuHamburguer"
           onClick={() => setShowMenu(!showMenu)}
-          >MENU HAMBURGUER</p>
+          ></i>
     </Container>
   );
 }

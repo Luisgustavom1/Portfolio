@@ -20,6 +20,7 @@ export const Container = styled.header<ContainerProps>`
 
   .menuHamburguer {
     display: none;
+    font-size: 3rem;
   }
 
   @media(max-width: 805px) {
