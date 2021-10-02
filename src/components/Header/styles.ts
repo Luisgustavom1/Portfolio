@@ -70,6 +70,10 @@ export const Logo = styled.h1`
 
 export const Nav = styled.nav`
   position: relative;
+  a {
+    text-decoration: none;
+    color: ${({theme}) => theme.colors.primaryText};
+  }
   ul {
     display: flex;
     gap: 3.5vw;
@@ -79,7 +83,7 @@ export const Nav = styled.nav`
         cursor: pointer;
         user-select: none;
         &:hover {
-            filter: brightness(.8);
+          filter: brightness(.8);
         }
     }
   }

@@ -31,7 +31,7 @@ const Skills: React.FC = () => {
   }, []);
   
   return(
-    <Container>
+    <Container id='mySkills'>
       <HeadingCategories>
         Skills
       </HeadingCategories>

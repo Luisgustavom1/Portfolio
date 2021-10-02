@@ -29,7 +29,7 @@ const Services: React.FC = () => {
   }, []);
 
   return(
-    <Container>
+    <Container id='services'>
       <HeadingCategories>
         Services
       </HeadingCategories>

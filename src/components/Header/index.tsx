@@ -12,10 +12,18 @@ const Header: React.FC = () => {
         </div>
         <Nav className='navContainer'>
             <ul>
-                <li>About Me</li>
-                <li>Projects</li>
-                <li>Services</li>
-                <li>My Skills</li>
+                <a href="#aboutMe">
+                  <li>About Me</li>
+                </a>
+                <a href="#projects">
+                  <li>Projects</li>
+                </a>
+                <a href="#services">
+                  <li>Services</li>
+                </a>
+                <a href="#mySkills">
+                  <li>My Skills</li>
+                </a>
             </ul>
         </Nav>
         <i 
